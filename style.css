@@ -4,16 +4,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .login-container {
     width: 300px;
     margin: 90px auto;
     background-color: white;
+    border: 3px solid black;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -34,21 +41,26 @@ input[type="password"] {
   justify-items: center;
     width: 90%;
     padding: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid gray;
     border-radius: 50px;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 50px;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+a {
+  text-decoration: none;
+  color: blue;
 }
